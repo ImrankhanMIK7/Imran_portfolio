@@ -341,14 +341,15 @@ export default function App() {
         className="relative h-screen w-full flex flex-col justify-between overflow-x-clip"
       >
         {/* Fullscreen Hero Video Background */}
-        <div className="absolute inset-0 w-full h-full z-0 overflow-hidden">
+        <div className="absolute inset-0 w-full h-full z-0 overflow-hidden pointer-events-none select-none">
           <video
             autoPlay
             loop
             muted
             playsInline
-            className="w-full h-full object-cover select-none pointer-events-none opacity-95"
-            src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260403_050628_c4e32401-fab4-4a27-b7a8-6e9291cd5959.mp4"
+            webkit-playsinline="true"
+            className="w-full h-full object-cover opacity-95"
+            src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260314_131748_f2ca2a28-fed7-44c8-b9a9-bd9acdd5ec31.mp4"
           />
           <div className="absolute inset-0 bg-black/15 z-0" />
         </div>
@@ -618,13 +619,14 @@ export default function App() {
         className="w-full relative rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] -mt-10 sm:-mt-12 md:-mt-14 pt-20 pb-32 px-5 sm:px-8 md:px-10 z-10"
       >
         {/* Fullscreen Video Background */}
-        <div className="absolute inset-0 w-full h-full z-0 overflow-hidden">
+        <div className="absolute inset-0 w-full h-full z-0 overflow-hidden pointer-events-none select-none">
           <video
             autoPlay
             loop
             muted
             playsInline
-            className="w-full h-full object-cover select-none pointer-events-none opacity-95"
+            webkit-playsinline="true"
+            className="w-full h-full object-cover opacity-95"
             src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260307_083826_e938b29f-a43a-41ec-a153-3d4730578ab8.mp4"
           />
           <div className="absolute inset-0 bg-[#0C0C0C]/30 z-0" />
@@ -990,7 +992,7 @@ export default function App() {
 
                     {/* Phone */}
                     <a
-                      href="tel:+919301824495"
+                      href="tel:+918889038390"
                       className="group flex items-center gap-3 p-3.5 rounded-xl border border-transparent hover:border-slate-200 hover:bg-slate-50 hover:shadow-sm transition-all duration-300 cursor-pointer"
                     >
                       <div className="p-2.5 rounded-lg bg-slate-100 text-slate-700 group-hover:bg-slate-900 group-hover:text-white shadow-sm transition-all duration-300">
@@ -998,14 +1000,14 @@ export default function App() {
                       </div>
                       <div className="flex-1 min-w-0">
                         <span className="block text-[10px] uppercase font-bold tracking-wider text-slate-400">Phone Number</span>
-                        <span className="block text-sm font-semibold text-slate-800 truncate">+91 9301824495</span>
+                        <span className="block text-sm font-semibold text-slate-800 truncate">+91 8889038390</span>
                       </div>
                       <ExternalLink size={12} className="text-slate-400/0 group-hover:text-slate-400/60 transition-opacity duration-300" />
                     </a>
 
                     {/* LinkedIn */}
                     <a
-                      href="https://linkedin.com/in/imrankhan-renowned"
+                      href="https://linkedin.com/in/imrankhanmik"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="group flex items-center gap-3 p-3.5 rounded-xl border border-transparent hover:border-slate-200 hover:bg-slate-50 hover:shadow-sm transition-all duration-300 cursor-pointer"
@@ -1015,14 +1017,14 @@ export default function App() {
                       </div>
                       <div className="flex-1 min-w-0">
                         <span className="block text-[10px] uppercase font-bold tracking-wider text-slate-400">LinkedIn</span>
-                        <span className="block text-sm font-semibold text-slate-800 truncate text-left">linkedin.com/in/imrankhan-renowned</span>
+                        <span className="block text-sm font-semibold text-slate-800 truncate text-left">linkedin.com/in/imrankhanmik</span>
                       </div>
                       <ExternalLink size={12} className="text-slate-400/40 group-hover:text-slate-400/80 transition-opacity duration-300" />
                     </a>
 
                     {/* GitHub */}
                     <a
-                      href="https://github.com/imrankhan-renowned"
+                      href="https://github.com/ImrankhanMIK7"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="group flex items-center gap-3 p-3.5 rounded-xl border border-transparent hover:border-slate-200 hover:bg-slate-50 hover:shadow-sm transition-all duration-300 cursor-pointer"
@@ -1032,7 +1034,7 @@ export default function App() {
                       </div>
                       <div className="flex-1 min-w-0">
                         <span className="block text-[10px] uppercase font-bold tracking-wider text-slate-400">GitHub</span>
-                        <span className="block text-sm font-semibold text-slate-800 truncate text-left">github.com/imrankhan-renowned</span>
+                        <span className="block text-sm font-semibold text-slate-800 truncate text-left">github.com/ImrankhanMIK7</span>
                       </div>
                       <ExternalLink size={12} className="text-slate-400/40 group-hover:text-slate-400/80 transition-opacity duration-300" />
                     </a>

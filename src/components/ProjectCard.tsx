@@ -38,7 +38,7 @@ export default function ProjectCard({
   return (
     <div
       ref={containerRef}
-      className="relative w-full h-[85vh] flex items-start justify-center"
+      className="relative w-full min-h-[500px] md:h-[85vh] flex items-start justify-center pb-12 md:pb-0"
       style={{
         zIndex: index + 10,
       }}
@@ -50,13 +50,13 @@ export default function ProjectCard({
         transition={{ duration: 0.7, delay: index * 0.1, ease: "easeOut" }}
         style={{
           scale,
-          top: `calc(clamp(96px, 12vw, 128px) + ${index * 28}px)`,
+          top: `calc(clamp(80px, 10vw, 128px) + ${index * 20}px)`,
         }}
-        className="sticky top-24 md:top-32 w-full rounded-[40px] sm:rounded-[50px] md:rounded-[60px] border-2 border-[#D7E2EA] bg-[#0C0C0C] p-4 sm:p-6 md:p-8 flex flex-col justify-between min-h-[70vh] sm:min-h-[75vh] md:min-h-[80vh] pb-6 sm:pb-8 md:pb-10"
+        className="sticky top-20 md:top-32 w-full rounded-[30px] sm:rounded-[50px] md:rounded-[60px] border-2 border-[#D7E2EA] bg-[#0C0C0C] p-4 sm:p-6 md:p-8 flex flex-col justify-between min-h-[450px] md:min-h-[80vh] pb-6 sm:pb-8 md:pb-10"
       >
         <div className="flex flex-wrap items-center justify-between gap-4 border-b border-[#D7E2EA]/10 pb-4">
           <div className="flex items-center gap-4 sm:gap-6">
-            <span className="font-sans font-black text-white leading-none text-[2.5rem] sm:text-[3.5rem] md:text-[5rem] lg:text-[6.5rem]">
+            <span className="font-sans font-black text-white leading-none text-[2.2rem] sm:text-[3.5rem] md:text-[5rem] lg:text-[6.5rem]">
               {number}
             </span>
             <div className="flex flex-col">
@@ -99,7 +99,7 @@ export default function ProjectCard({
             </div>
           </div>
 
-          <div className="md:col-span-6 relative w-full h-full overflow-hidden rounded-[40px] sm:rounded-[50px] md:rounded-[60px] bg-slate-950">
+          <div className="md:col-span-6 relative w-full h-[220px] sm:h-[300px] md:h-full overflow-hidden rounded-[30px] sm:rounded-[50px] md:rounded-[60px] bg-slate-950">
             <img
               src={images.col2}
               alt={`${name} main preview`}
